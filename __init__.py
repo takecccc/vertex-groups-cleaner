@@ -1,14 +1,10 @@
 bl_info = {
-    "name": "CleanVertexGroup",
+    "name": "VertexGroupsCleaner",
     "author": "takec",
     "version": (1, 0),
     "blender": (3, 1, 0),
-    "location": "",
+    "location": "Object Data Properties > Vertex Groups > Vertex Groups Specials > clean vertex group",
     "description": "weightが全て0のVertexGroupを削除",
-    "warning": "",
-    "support": "TESTING",
-    "doc_url": "",
-    "tracker_url": "",
     "category": "Object"
 }
 
