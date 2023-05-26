@@ -10,7 +10,7 @@ bl_info = {
 
 if "bpy" in locals():
     import imp
-    imp.reload(vertex_group_cleaner)
+    imp.reload(vertex_groups_cleaner)
 else:
     from . import vertex_groups_cleaner
 
