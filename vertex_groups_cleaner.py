@@ -28,11 +28,11 @@ class CleanVertexGroup(bpy.types.Operator):
             vg_name_by_index[vg.index] = vg.name
             vg_index_by_name[vg.name] = vg.index
 
-        # verticesから、各vertex_groupのmag_weightsを取得
+        # verticesから、各vertex_groupのmax_weightsを取得
         for v in obj.data.vertices:
             for g in v.groups:
                 group_index = g.group
-                w = obj.vertex_groups[group_index].weight(v.index)
+                w = g.weight
                 if(
                     (vg_max_weights_by_index.get(group_index) is None) or
                     (w > vg_max_weights_by_index[group_index])
